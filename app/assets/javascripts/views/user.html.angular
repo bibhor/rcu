@@ -1,0 +1,12 @@
+<div ng-controller="UserCtrl" ng-init="init()">
+	<ul>
+		<li>
+			<h5><a href="/#/Alert">My Alerts</a></h5>
+
+		</li>
+		<li>
+			<h5><a href="/#/Settings">Settings</a></h5>
+
+		</li>
+	</ul>
+</div>

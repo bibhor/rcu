@@ -3,6 +3,13 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
+routes_database_development:
+  adapter: mysql2
+  host: localhost
+  username: railsrcu
+  password: zAQ12wsx
+  database: rockclimbingutah_new
+
 development:
   adapter: mysql2
   encoding: utf8
@@ -25,7 +32,19 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
   pool: 5
-  timeout: 5000
+  database: custom_app
+  username: custom_app_user
+  password: password
+  # socket:   <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>
+  host:     localhost
+  port:     3306
+routes_database_production:
+  adapter: mysql2
+  host: localhost
+  username: railsrcu
+  password: zAQ12wsx
+  database: rockclimbingutah_new

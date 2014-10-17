@@ -8,7 +8,7 @@ gem 'rack', '~> 1.4.5'
 
 gem 'mysql2'
 #gem 'sqlite3'
-#gem "mongo"
+gem "mongo"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,7 +27,7 @@ gem "therubyracer", "~> 0.10.2"
 gem 'jquery-rails'
 
 # mongoid
-#gem "mongoid", "~> 3.0.0"
+gem "mongoid", "~> 3.0.0"
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"

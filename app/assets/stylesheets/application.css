@@ -10,4 +10,9 @@
  *
  *= require_self
  *= require_tree .
+ *= require twitter/bootstrap
  */
+ html { height: 100% }
+ body { height: 100%; margin: 0; padding-top: 60px }
+ #map-canvas { height: 1100px; width:1140px;}
+ form.custom-form {margin:0px; padding:10px;}

@@ -1,7 +1,13 @@
 Rorbase2::Application.routes.draw do
+  get "city/index"
+
+  get "city/search"
+
   get "member/index"
 
   get "home/index"
+
+  resources :city
 
   devise_for :admins
 

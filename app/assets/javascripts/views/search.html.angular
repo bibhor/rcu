@@ -1,0 +1,8 @@
+<div ng-controller="SearchCtrl" ng-init="init()">
+	<div style="margin:0px auto;width:100%;">
+		<form class="form-search custom-form" style="text-align:center;font-size:40px;">
+			<input type="text" class="input-large search-query" placeholder="Enter Route Name or City">
+			<button type="submit" class="btn">Search</button>
+		</form>
+	</div>
+</div>
